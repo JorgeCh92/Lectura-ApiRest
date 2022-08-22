@@ -1,8 +1,8 @@
 import * as React from 'react';
 import Button from '@material-ui/core/Button';
-import { HotelEntityVm } from './hotel-collection.vm';
-import { HotelCard } from './components/hotel-card.component';
-import * as classes from './hotel-collection.styles';
+import { HotelEntityVm } from './character-collection.vm';
+import { HotelCard } from './components/character-card.component';
+import * as classes from './character-collection.styles';
 
 interface Props {
   hotelCollection: HotelEntityVm[];

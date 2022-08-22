@@ -1,4 +1,4 @@
-import { HotelEntityApi } from './hotel-collection.api-model';
+import { HotelEntityApi } from './character-collection.api-model';
 
 export const mockHotelCollection: HotelEntityApi[] = [
   {

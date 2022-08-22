@@ -1,5 +1,5 @@
-import * as apiModel from './api/hotel.api-model';
-import * as viewModel from './hotel.vm';
+import * as apiModel from './api/character.api-model';
+import * as viewModel from './character.vm';
 
 export const mapHotelFromApiToVm = (
   hotel: apiModel.Hotel

@@ -6,24 +6,24 @@ import {
   RatingComponent,
 } from 'common/components';
 import { Button } from '@material-ui/core';
-import { formValidation } from './hotel.validations';
-import { Hotel } from './hotel.vm';
-import * as classes from './hotel.styles';
+import { formValidation } from './character.validations';
+import { Character } from './character.vm';
+import * as classes from './character.styles';
 import { Lookup } from 'common/models';
 
 interface Props {
-  hotel: Hotel;
+  Character: Character;
   cities: Lookup[];
-  onSave: (hotel: Hotel) => void;
+  onSave: (Character: Character) => void;
 }
 
-export const HotelComponent: React.FunctionComponent<Props> = (props) => {
-  const { hotel, cities, onSave } = props;
+export const CharacterComponent: React.FunctionComponent<Props> = (props) => {
+  const { Character, cities, onSave } = props;
 
   return (
     <Formik
       onSubmit={onSave}
-      initialValues={hotel}
+      initialValues={Character}
       enableReinitialize={true}
       validate={formValidation.validateForm}
     >
