@@ -3,7 +3,6 @@ import { Formik, Form } from 'formik';
 import {
   TextFieldComponent,
   SelectComponent,
-  RatingComponent,
 } from 'common/components';
 import { Button } from '@material-ui/core';
 import { formValidation } from './character.validations';
@@ -13,12 +12,12 @@ import { Lookup } from 'common/models';
 
 interface Props {
   Character: Character;
-  cities: Lookup[];
+  locations: Lookup[];
   onSave: (Character: Character) => void;
 }
 
 export const CharacterComponent: React.FunctionComponent<Props> = (props) => {
-  const { Character, cities, onSave } = props;
+  const { Character, locations, onSave } = props;
 
   return (
     <Formik
@@ -30,15 +29,18 @@ export const CharacterComponent: React.FunctionComponent<Props> = (props) => {
       {() => (
         <Form className={classes.root}>
           <TextFieldComponent name="name" label="Name" />
-          <TextFieldComponent name="address" label="Address" />
-          <RatingComponent name="rating" max={5} />
-          <SelectComponent name="city" label="City" items={cities} />
+          <SelectComponent name="location.name" label="Location" items={locations} />
           <TextFieldComponent
-            name="description"
-            label="Description"
-            multiline={true}
-            rows={3}
-            rowsMax={5}
+            name="status"
+            label="Status"
+          />
+          <TextFieldComponent
+            name="species"
+            label="Species"
+          />
+          <TextFieldComponent
+            name="gender"
+            label="Gender"
           />
           <Button type="submit" variant="contained" color="primary">
             Save
