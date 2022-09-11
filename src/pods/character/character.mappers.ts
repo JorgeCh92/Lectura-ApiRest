@@ -4,7 +4,7 @@ import { Lookup } from '../../common/models';
 
 export const mapCharacterFromApiToVm = (
   character: apiModel.Character
-): viewModel.Character => ({
+): viewModel.Character => {
   if (!character) 
   {
     return viewModel.createEmptyCharacter();
@@ -13,14 +13,14 @@ export const mapCharacterFromApiToVm = (
   return {
     ...character,
   };
-});
+};
 
 export const mapCharacterFromVmToApi = (character: viewModel.Character): apiModel.Character =>
   (({
     ...character,
   } as unknown) as apiModel.Character);
 
-  export const mapLocationApiToLookup = (location: viewModel.LocationApi): Lookup =>
+export const mapLocationApiToLookup = (location: viewModel.LocationApi): Lookup =>
   (({
     id: location.name,
     name: location.name,

@@ -11,18 +11,18 @@ import * as classes from './character.styles';
 import { Lookup } from 'common/models';
 
 interface Props {
-  Character: Character;
+  character: Character;
   locations: Lookup[];
   onSave: (Character: Character) => void;
 }
 
 export const CharacterComponent: React.FunctionComponent<Props> = (props) => {
-  const { Character, locations, onSave } = props;
+  const { character, locations, onSave } = props;
 
   return (
     <Formik
       onSubmit={onSave}
-      initialValues={Character}
+      initialValues={character}
       enableReinitialize={true}
       validate={formValidation.validateForm}
     >

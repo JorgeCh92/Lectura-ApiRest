@@ -9,13 +9,13 @@ import { LocationApi } from './api';
 import { mapToCollection } from '../../common/mappers';
 
 export const CharacterContainer: React.FunctionComponent = (props) => {
-  const [Character, setCharacter] = React.useState<Character>(createEmptyCharacter());
+  const [character, setCharacter] = React.useState<Character>(createEmptyCharacter());
   const [locations, setLocations] = React.useState<Lookup[]>([]);
   const { id } = useParams();
   const history = useHistory();
 
   const handleLoadLocationCollection = async () => {
-    const apiLocation = await api.getLocations();
+    const apiLocations: LocationApi[] = await api.getLocations();
     setLocations(mapToCollection(apiLocations, mapLocationApiToLookup));
   };
 

@@ -1,4 +1,5 @@
 import { Character } from './character.api-model';
+import { Lookup } from 'common/models';
 
 export const mockCharacterCollection: Character[] = [
   {
@@ -46,5 +47,16 @@ export const mockCharacterCollection: Character[] = [
     ],
     "url": "https://rickandmortyapi.com/api/character/183",
     "created": "2017-12-29T18:51:29.693Z"
+  }
+];
+
+export const mockLocations: Lookup[] = [
+  {
+    "id": "1",
+    "name": "Earth (C-137)",
+  },
+  {
+    "id": "183",
+    "name": "Earth (C-137)",
   }
 ];

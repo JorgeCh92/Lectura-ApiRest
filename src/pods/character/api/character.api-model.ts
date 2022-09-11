@@ -5,16 +5,30 @@ export interface Character {
   "species": string,
   "type": string,
   "gender": string,
-  "origin": {
-    "name": string,
-    "url": string
-  },
-  "location": {
-    "name": string,
-    "url": string
-  },
+  "origin": Origin;
+  "location": Location;
   "image": string,
   "episode": string[],
   "url": string,
   "created": string
+}
+
+export interface Origin {
+  name: string;
+  url: string;
+}
+
+export interface Location {
+  name: string;
+  url: string;
+}
+
+export interface LocationApi {
+  id: number;
+  name: string;
+  type: string;
+  dimension: string;
+  residents: string[];
+  url: string;
+  created: string;
 }

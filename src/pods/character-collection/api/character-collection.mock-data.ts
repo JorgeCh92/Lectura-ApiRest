@@ -1,84 +1,95 @@
-import { HotelEntityApi } from './character-collection.api-model';
+import { CharacterEntityApi } from './character-collection.api-model';
 
-export const mockHotelCollection: HotelEntityApi[] = [
+export const mockCharacterCollection: CharacterEntityApi[] = [
   {
-    id: '1',
-    type: 'hotel',
-    name: 'W Seattle',
-    created: new Date(1464777092747),
-    modified: new Date(1464777092747),
-    address1: '1112 4th Ave',
-    airportCode: 'SEA',
-    amenityMask: 7798785,
-    city: 'Seattle',
-    confidenceRating: 5,
-    countryCode: 'US',
-    deepLink:
-      'http://www.travelnow.com/templates/55505/hotels/213497/overview?lang=en&amp;currency=USD&amp;standardCheckin=null/null/null&amp;standardCheckout=null/null/null',
-    highRate: 210,
-    hotelId: 213497,
-    hotelInDestination: true,
-    hotelRating: 4,
-    location: {
-      latitude: 47.60688,
-      longitude: -122.33361,
+    "id": 92,
+    "name": "Davin",
+    "status": "Dead",
+    "species": "Human",
+    "type": "",
+    "gender": "Male",
+    "origin": {
+      "name": "Earth (C-137)",
+      "url": "https://rickandmortyapi.com/api/location/1"
     },
-    locationDescription: 'Near Pike Place Market',
-    lowRate: 175,
-    metadata: {
-      path: '/hotels/8',
+    "location": {
+      "name": "Earth (C-137)",
+      "url": "https://rickandmortyapi.com/api/location/1"
     },
-    postalCode: 98101,
-    propertyCategory: 1,
-    proximityDistance: 11.09939,
-    proximityUnit: 'MI',
-    rateCurrencyCode: 'USD',
-    shortDescription:
-      'With a stay at W Seattle, you&apos;ll be centrally located in Seattle, steps from Seattle Public Library and Safeco Headquarters. This 4-star hotel is close to Pike Place',
-    stateProvinceCode: 'WA',
-    thumbNailUrl: '/thumbnails/284304_50_t.jpg',
-    tripAdvisorRating: 4,
-    tripAdvisorRatingUrl:
-      'http://www.tripadvisor.com/img/cdsi/img2/ratings/traveler/4.0-12345-4.gif',
+    "image": "https://rickandmortyapi.com/api/character/avatar/92.jpeg",
+    "episode": [
+      "https://rickandmortyapi.com/api/episode/1",
+      "https://rickandmortyapi.com/api/episode/6"
+    ],
+    "url": "https://rickandmortyapi.com/api/character/92",
+    "created": "2017-12-01T11:20:51.247Z"
   },
   {
-    id: '2',
-    type: 'hotel',
-    name: 'Hotel Monaco Seattle, a Kimpton Hotel',
-    created: new Date(1464777092694),
-    modified: new Date(1464777092694),
-    address1: '1101 4th Ave',
-    airportCode: 'SEA',
-    amenityMask: 1310720,
-    city: 'Seattle',
-    confidenceRating: 52,
-    countryCode: 'US',
-    deepLink:
-      'http://www.travelnow.com/templates/55505/hotels/132138/overview?lang=en&amp;currency=USD&amp;standardCheckin=null/null/null&amp;standardCheckout=null/null/null',
-    highRate: 489,
-    hotelId: 132138,
-    hotelInDestination: true,
-    hotelRating: 4,
-    location: {
-      latitude: 47.60682,
-      longitude: -122.33358,
+    "id": 207,
+    "name": "Loggins",
+    "status": "Alive",
+    "species": "Alien",
+    "type": "Alligator-Person",
+    "gender": "Male",
+    "origin": {
+      "name": "unknown",
+      "url": ""
     },
-    locationDescription: 'Near Pike Place Market',
-    lowRate: 189,
-    metadata: {
-      path: '/hotels/6',
+    "location": {
+      "name": "Interdimensional Cable",
+      "url": "https://rickandmortyapi.com/api/location/6"
     },
-    postalCode: 98101,
-    propertyCategory: 1,
-    proximityDistance: 11.097676,
-    proximityUnit: 'MI',
-    rateCurrencyCode: 'USD',
-    shortDescription:
-      'With a stay at Hotel Monaco Seattle, a Kimpton Hotel, you&apos;ll be centrally located in Seattle, steps from Seattle Public Library and Safeco Headquarters. This 4-star',
-    stateProvinceCode: 'WA',
-    thumbNailUrl: '/thumbnails/62800_122_t.jpg',
-    tripAdvisorRating: 4.5,
-    tripAdvisorRatingUrl:
-      'http://www.tripadvisor.com/img/cdsi/img2/ratings/traveler/4.5-12345-4.gif',
+    "image": "https://rickandmortyapi.com/api/character/avatar/207.jpeg",
+    "episode": [
+      "https://rickandmortyapi.com/api/episode/8",
+      "https://rickandmortyapi.com/api/episode/13",
+      "https://rickandmortyapi.com/api/episode/17"
+    ],
+    "url": "https://rickandmortyapi.com/api/character/207",
+    "created": "2017-12-30T13:54:28.627Z"
   },
+  {
+    "id": 323,
+    "name": "Slaveowner",
+    "status": "Dead",
+    "species": "Human",
+    "type": "",
+    "gender": "Male",
+    "origin": {
+      "name": "Post-Apocalyptic Earth",
+      "url": "https://rickandmortyapi.com/api/location/8"
+    },
+    "location": {
+      "name": "Post-Apocalyptic Earth",
+      "url": "https://rickandmortyapi.com/api/location/8"
+    },
+    "image": "https://rickandmortyapi.com/api/character/avatar/323.jpeg",
+    "episode": [
+      "https://rickandmortyapi.com/api/episode/23"
+    ],
+    "url": "https://rickandmortyapi.com/api/character/323",
+    "created": "2018-01-05T15:13:46.862Z"
+  },
+  {
+    "id": 393,
+    "name": "Roy",
+    "status": "Alive",
+    "species": "Human",
+    "type": "Game",
+    "gender": "Male",
+    "origin": {
+      "name": "Roy: A Life Well Lived",
+      "url": "https://rickandmortyapi.com/api/location/32"
+    },
+    "location": {
+      "name": "Roy: A Life Well Lived",
+      "url": "https://rickandmortyapi.com/api/location/32"
+    },
+    "image": "https://rickandmortyapi.com/api/character/avatar/393.jpeg",
+    "episode": [
+      "https://rickandmortyapi.com/api/episode/13"
+    ],
+    "url": "https://rickandmortyapi.com/api/character/393",
+    "created": "2018-01-20T19:15:27.239Z"
+  }
 ];

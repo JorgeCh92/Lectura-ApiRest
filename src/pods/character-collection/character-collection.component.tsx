@@ -1,31 +1,31 @@
 import * as React from 'react';
 import Button from '@material-ui/core/Button';
-import { HotelEntityVm } from './character-collection.vm';
-import { HotelCard } from './components/character-card.component';
+import { CharacterEntityVm } from './character-collection.vm';
+import { CharacterCard } from './components/character-card.component';
 import * as classes from './character-collection.styles';
 
 interface Props {
-  hotelCollection: HotelEntityVm[];
-  onCreateHotel: () => void;
-  onEdit: (id: string) => void;
-  onDelete: (id: string) => void;
+  CharacterCollection: CharacterEntityVm[];
+  onCreateCharacter: () => void;
+  onEdit: (id: number) => void;
+  onDelete: (id: number) => void;
 }
 
-export const HotelCollectionComponent: React.FunctionComponent<Props> = (
+export const CharacterCollectionComponent: React.FunctionComponent<Props> = (
   props
 ) => {
-  const { hotelCollection, onCreateHotel, onEdit, onDelete } = props;
+  const { CharacterCollection, onCreateCharacter, onEdit, onDelete } = props;
 
   return (
     <div className={classes.root}>
-      <Button variant="contained" color="primary" onClick={onCreateHotel}>
-        Add hotel
+      <Button variant="contained" color="primary" onClick={onCreateCharacter}>
+        Add Character
       </Button>
 
       <ul className={classes.list}>
-        {hotelCollection.map((hotel) => (
-          <li key={hotel.id}>
-            <HotelCard hotel={hotel} onEdit={onEdit} onDelete={onDelete} />
+        {CharacterCollection.map((Character) => (
+          <li key={Character.id}>
+            <CharacterCard Character={Character} onEdit={onEdit} onDelete={onDelete} />
           </li>
         ))}
       </ul>
