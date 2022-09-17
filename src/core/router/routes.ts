@@ -4,6 +4,7 @@ interface SwitchRoutes {
   root: string;
   characterCollection: string;
   createCharacter: string;
+  showCharacter: string;
   editCharacter: string;
 }
 
